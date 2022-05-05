@@ -10,10 +10,12 @@ public class JPAMainApp {
 		CustomerService customerService = new CustomerServiceImpl();
 		
 		Customer customer = new Customer();
-		customer.setCustomerId(1);
-		customer.setCustomerName("Ram Kumar");
+		customer.setCustomerId(2);
+		customer.setCustomerName("Mahesh Babu");
 		
 		customerService.addCustomer(customer);
+		
+		System.out.println(customerService.getCustomerById(1));
 
 	}
 
