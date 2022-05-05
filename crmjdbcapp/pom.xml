@@ -5,6 +5,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crmjdbcapp</name>
 	<description>crmjdbcapp</description>
+
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
