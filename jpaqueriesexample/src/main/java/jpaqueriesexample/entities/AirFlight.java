@@ -45,6 +45,27 @@ public class AirFlight {
 	@Column(name = "total_seats")
 	private Integer totalSeats;
 	
+	public AirFlight() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+	public AirFlight(String flightId, String airlineId, String airlineName, String fromLocation, String toLocation,
+			Date departureTime, Date arrivalTime, Date duration, Integer totalSeats) {
+		this.flightId = flightId;
+		this.airlineId = airlineId;
+		this.airlineName = airlineName;
+		this.fromLocation = fromLocation;
+		this.toLocation = toLocation;
+		this.departureTime = departureTime;
+		this.arrivalTime = arrivalTime;
+		this.duration = duration;
+		this.totalSeats = totalSeats;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "AirFlight [flightId=" + flightId + ", airlineId=" + airlineId + ", airlineName=" + airlineName

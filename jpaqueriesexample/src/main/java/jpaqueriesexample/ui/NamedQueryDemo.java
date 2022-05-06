@@ -1,5 +1,8 @@
 package jpaqueriesexample.ui;
 
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -29,6 +32,12 @@ public class NamedQueryDemo {
 					em.createNamedQuery("flightsToChennai", AirFlight.class);
 			List<AirFlight> flightsToChennai= q2.getResultList();
 			System.out.println(flightsToChennai);
+			
+			AirFlight airFlight = new AirFlight("3","6E","Indigo","DELHI","PUNE",Date.valueOf(LocalDate.now().plusDays(1)),Date.valueOf(LocalDate.now().plusDays(2)),Date.valueOf(LocalDate.now()),1);
+			em.getTransaction().begin();
+			em.persist(airFlight);
+			em.getTransaction().commit();
+			
 		}catch(PersistenceException e) {
 			em.getTransaction().rollback();
 			e.printStackTrace();

@@ -5,6 +5,10 @@
 		<class>jpaqueriesexample.entities.Book</class>
 		<class>jpaqueriesexample.entities.AirFlight</class>
 		<class>jpaqueriesexample.entities.AirPassengerProfile</class>
+		<class>jpaqueriesexample.onetooneuni.Student</class>
+		<class>jpaqueriesexample.onetooneuni.Address</class>
+		<class>jpaqueriesexample.onetoonebi.StudentBi</class>
+		<class>jpaqueriesexample.onetoonebi.AddressBi</class>
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"
