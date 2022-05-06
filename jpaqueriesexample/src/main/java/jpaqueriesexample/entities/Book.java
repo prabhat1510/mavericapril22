@@ -1,12 +1,13 @@
 package jpaqueriesexample.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="book_info")
 public class Book {
-	
+	@Id
 	private Long id;
 	private String bookTitle;
 	private String author;

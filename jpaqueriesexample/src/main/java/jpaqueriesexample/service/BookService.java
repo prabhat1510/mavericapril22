@@ -5,5 +5,5 @@ import java.util.List;
 import jpaqueriesexample.entities.Book;
 
 public interface BookService {
-	public List<Book>  getBookByAuthor(String author);
+	public Book  getBookByAuthor(String author);
 }

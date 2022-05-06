@@ -6,6 +6,6 @@ import jpaqueriesexample.entities.Book;
 
 public interface BookDAO {
 	
-	public List<Book>  getBookByAuthor(String author);
+	public Book  getBookByAuthor(String author);
 
 }

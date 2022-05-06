@@ -10,7 +10,7 @@ public class BookServiceImpl implements BookService {
 	private BookDAO bookDao = new BookDAOImpl();
 
 	@Override
-	public List<Book>  getBookByAuthor(String author) {
+	public Book  getBookByAuthor(String author) {
 
 		return bookDao.getBookByAuthor(author);
 	}
