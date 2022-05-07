@@ -7,6 +7,7 @@ public class CakeDemo {
 		System.out.println(blackForest.getName());
 		System.out.println(blackForest.getPrice());
 		System.out.println(blackForest.getType());
+		System.out.println();
 
 	}
 
